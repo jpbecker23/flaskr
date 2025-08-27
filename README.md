@@ -20,44 +20,43 @@ Clone o repositório e entre na pasta:
 ```bash
 git clone https://github.com/seu-usuario/flaskr.git
 cd flaskr
-Crie e ative um ambiente virtual:
+```
 
-bash
-Copiar código
+Crie e ative um ambiente virtual:
+```bash
 python -m venv venv
 source venv/bin/activate   # Linux/Mac
 venv\Scripts\activate      # Windows
+```
+
 Instale as dependências:
-
-bash
-Copiar código
+```bash
 pip install -r requirements.txt
-Ou, se estiver usando o pyproject.toml com flit:
+```
 
-bash
-Copiar código
+Ou, se estiver usando o pyproject.toml com flit:
+```bash
 flit install
+```
+
 ▶️ Executando o projeto
 Inicialize o banco de dados e rode a aplicação:
 
-bash
-Copiar código
+```bash
 flask --app flaskr init-db
 flask --app flaskr run
+```
+
 Acesse em: http://127.0.0.1:5000/
 
 📚 Funcionalidades
 Registro e login de usuários
-
 Criar, editar e deletar posts
-
 Banco de dados SQLite simples
-
 Templates HTML com Jinja2
 
 🛠 Estrutura de Pastas
-cpp
-Copiar código
+```bash
 flaskr/
 │── __init__.py
 │── db.py
@@ -67,9 +66,7 @@ flaskr/
 │── static/
 tests/
 pyproject.toml
-🤝 Contribuindo
-Este projeto é apenas para estudo, mas melhorias são bem-vindas!
-Sinta-se à vontade para abrir issues ou enviar pull requests.
+```
 
 📄 Licença
 Este projeto segue a licença MIT.
